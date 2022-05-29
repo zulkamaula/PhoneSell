@@ -297,7 +297,7 @@ export default {
               // this.getListPhones();
               setTimeout(() => {
                 let RESULT = this.phonesData.filter((items) => {
-                  return items.attributes.stock > 0;
+                  return items.attributes.stock > 5;
                 });
                 this.phonesData = RESULT;
                 console.log("INI RESULT-NYA => ", RESULT);
