@@ -263,39 +263,9 @@ export default {
   watch: {
     selected: function () {
       if (this.selected.length > 0) {
-        const findInRating = this.selected.find((item) => item === "inRating");
-        const findInStock = this.selected.find((item) => item === "inStock");
-
         this.getListPhones();
-        if (findInRating) {
-          setTimeout(() => {
-            let RESULT = this.phonesData.filter((items) => {
-              return items.attributes.rating >= 4;
-            });
-            this.phonesData = RESULT;
-            console.log("INI RESULT-NYA => ", RESULT);
-          }, 100);
-        } else if (findInStock) {
-          // this.getListPhones();
-
-          setTimeout(() => {
-            let RESULT = this.phonesData.filter((items) => {
-              return items.attributes.stock > 0;
-            });
-            this.phonesData = RESULT;
-            console.log("INI RESULT-NYA => ", RESULT);
-          }, 100);
-        } else if (findInRating && findInStock) {
-          // this.getListPhones();
-
-          setTimeout(() => {
-            let RESULT = this.phonesData.filter((items) => {
-              return items.attributes.rating >= 4 && items.attributes.stock > 0;
-            });
-            this.phonesData = RESULT;
-            console.log("INI RESULT-NYA => ", RESULT);
-          }, 100);
-        }
+      } else {
+        this.getListPhones();
       }
     },
   },
@@ -309,6 +279,43 @@ export default {
           this.loading = false;
 
           this.phonesData = res.data.data;
+          if (this.selected.length > 0) {
+            const findInRating = this.selected.find(
+              (item) => item === "inRating"
+            );
+            const findInStock = this.selected.find(
+              (item) => item === "inStock"
+            );
+            if (findInRating) {
+              let RESULT = this.phonesData.filter((items) => {
+                return items.attributes.rating >= 4;
+              });
+              this.phonesData = RESULT;
+              console.log("INI RESULT-NYA => ", RESULT);
+            }
+            if (findInStock) {
+              // this.getListPhones();
+              setTimeout(() => {
+                let RESULT = this.phonesData.filter((items) => {
+                  return items.attributes.stock > 0;
+                });
+                this.phonesData = RESULT;
+                console.log("INI RESULT-NYA => ", RESULT);
+              }, 100);
+            }
+            if (findInRating && findInStock) {
+              // this.getListPhones();
+              setTimeout(() => {
+                let RESULT = this.phonesData.filter((items) => {
+                  return (
+                    items.attributes.rating >= 4 && items.attributes.stock > 0
+                  );
+                });
+                this.phonesData = RESULT;
+                console.log("INI RESULT-NYA => ", RESULT);
+              }, 100);
+            }
+          }
           console.log("INI res-NYA => ", this.phonesData);
         })
         .catch((e) => {
