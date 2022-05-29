@@ -69,7 +69,8 @@
             </div>
             <div class="col-9">
               <div class="row justify-content-between">
-                <div class="col-4 card-product position-relative">
+                <!-- Card -->
+                <div class="col-3 card-product">
                   <div class="badges">
                     <img src="../assets/images/Group 3037.png" />
                   </div>
@@ -92,33 +93,51 @@
                       &nbsp;200000 poins
                     </div>
                   </div>
-                  <div class="row justify-content-center">
-                    <div class="col-8 p-0 pl-1">
-                      <span class="d-inline-flex">
-                        <i class="fas fa-star star-enable fa-xs mr-1"></i>
-                        <i class="fas fa-star-half fa-xs star-enable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
+                  <div class="row justify-content-center reviews-section">
+                    <div class="col-11 p-0">
+                      <span class="stars">
+                        <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                        <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
                       </span>
                       <span class="text-btn"> 160 reviews </span>
                     </div>
-                    <div
-                      class="
-                        col-3
-                        p-1
-                        border
-                        rounded-pill
-                        btn-love-active
-                        text-center
-                      "
-                    >
-                      <i class="fas fa-heart fa-sm"></i>
+                  </div>
+                  <div class="row love-section mt-2 justify-content-end">
+                    <div class="col-4 p-0">
+                      <img
+                        class="mx-auto"
+                        src="../assets/images/Group 2991.png"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Layer -->
+                  <div class="middle container">
+                    <div class="row p-4 text-success-hover mb-4">In Stock</div>
+                    <div class="row justify-content-center">
+                      <div
+                        class="col-10 text-card-hover mt-4 mb-3 p-0 pt-5 pb-5"
+                      >
+                        Samsung Galaxy S9 -Midnight Black 4/64 GB
+                      </div>
+                    </div>
+                    <div class="row justify-content-center mb-5 mt-3">
+                      <div class="col">
+                        <img src="../assets/images/Group 3003.png" />
+                      </div>
+                    </div>
+                    <div class="row justify-content-end text-start mt-5">
+                      <div class="col-5">
+                        <img src="../assets/images/Group 3038.png" />
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-4 card-product">
+                <div class="col-3 card-product">
                   <div class="row p-4 text-success">In Stock</div>
                   <div class="row">
                     <img
@@ -137,22 +156,109 @@
                       &nbsp;200000 poins
                     </div>
                   </div>
-                  <div class="row justify-content-center">
-                    <div class="col-8 p-0 pl-1">
-                      <span class="d-inline-flex">
-                        <i class="fas fa-star star-enable fa-xs mr-1"></i>
-                        <i class="fas fa-star-half fa-xs star-enable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
-                        <i class="fas fa-star fa-xs star-disable mr-1"></i>
+                  <div class="row justify-content-center reviews-section">
+                    <div class="col-11 p-0">
+                      <span class="stars">
+                        <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                        <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
                       </span>
                       <span class="text-btn"> 160 reviews </span>
                     </div>
-                    <div
-                      class="col-3 p-1 border rounded-pill btn-love text-center"
-                    >
-                      <!-- <i class="far fa-heart fa-sm"></i> -->
-                      <i class="fal fa-heart fa-sm"></i>
+                  </div>
+                  <div class="row love-section mt-2 justify-content-end">
+                    <div class="col-4 p-0">
+                      <img
+                        class="mx-auto"
+                        src="../assets/images/Group 3038.png"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Layer -->
+                  <div class="middle container">
+                    <div class="row p-4 text-success-hover mb-4">In Stock</div>
+                    <div class="row justify-content-center">
+                      <div
+                        class="col-10 text-card-hover mt-4 mb-3 p-0 pt-5 pb-5"
+                      >
+                        Samsung Galaxy S9 -Midnight Black 4/64 GB
+                      </div>
+                    </div>
+                    <div class="row justify-content-center mb-5 mt-3">
+                      <div class="col">
+                        <img src="../assets/images/Group 3003.png" />
+                      </div>
+                    </div>
+                    <div class="row justify-content-end text-start mt-5">
+                      <div class="col-5">
+                        <img src="../assets/images/Group 3038.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-3 card-product">
+                  <div class="row p-4 text-success">In Stock</div>
+                  <div class="row">
+                    <img
+                      class="col"
+                      src="../assets/images/Intersection 27.png"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col text-card">
+                      Samsung Galaxy S9 -Midnight Black 4/64 GB
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-poins">
+                      <img src="../assets/images/Group 2752.png" />
+                      &nbsp;200000 poins
+                    </div>
+                  </div>
+                  <div class="row justify-content-center reviews-section">
+                    <div class="col-11 p-0">
+                      <span class="stars">
+                        <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                        <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                        <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                      </span>
+                      <span class="text-btn"> 160 reviews </span>
+                    </div>
+                  </div>
+                  <div class="row love-section mt-2 justify-content-end">
+                    <div class="col-4 p-0">
+                      <img
+                        class="mx-auto"
+                        src="../assets/images/Group 3038.png"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Layer -->
+                  <div class="middle container">
+                    <div class="row p-4 text-success-hover mb-4">In Stock</div>
+                    <div class="row justify-content-center">
+                      <div
+                        class="col-10 text-card-hover mt-4 mb-3 p-0 pt-5 pb-5"
+                      >
+                        Samsung Galaxy S9 -Midnight Black 4/64 GB
+                      </div>
+                    </div>
+                    <div class="row justify-content-center mb-5 mt-3">
+                      <div class="col">
+                        <img src="../assets/images/Group 3003.png" />
+                      </div>
+                    </div>
+                    <div class="row justify-content-end text-start mt-5">
+                      <div class="col-5">
+                        <img src="../assets/images/Group 3038.png" />
+                      </div>
                     </div>
                   </div>
                 </div>
