@@ -3,16 +3,19 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <HomePhones />
+    <Footbar />
   </div>
 </template>
 
 <script>
 import HomePhones from "./views/HomePhones.vue";
+import Footbar from "./components/Footbar.vue";
 
 export default {
   name: "App",
   components: {
     HomePhones,
+    Footbar,
   },
 };
 </script>

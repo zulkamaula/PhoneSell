@@ -69,4 +69,10 @@
 .badges {
     position: absolute;
     right: 0;
+    z-index: 9999;
+}
+
+.text-footer {
+    color: #FFFFFF;
+    font-size: 14px;
 }

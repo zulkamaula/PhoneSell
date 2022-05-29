@@ -1,5 +1,5 @@
 <template>
-  <div name="homephones" class="col">
+  <div name="homephones" class="col" style="height: 400vh">
     <!-- <div> -->
     <div class="container-fluid pt-3">
       <div class="row justify-content-center pl-0 mb-4">
@@ -70,11 +70,7 @@
             <div class="col-9">
               <div class="row justify-content-between">
                 <div class="col-4 card-product position-relative">
-                  <div
-                    class="
-                      badges
-                    "
-                  >
+                  <div class="badges">
                     <img src="../assets/images/Group 3037.png" />
                   </div>
 
