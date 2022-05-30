@@ -147,8 +147,6 @@
                       </div>
                       <div class="row justify-content-center reviews-section">
                         <div class="col-8 col-md-5 col-lg-8 p-0">
-                          {{ Math.round(product.attributes.rating) }} - 
-                          {{ product.attributes.rating }}
                           <span
                             class="stars"
                             v-if="product.attributes.rating == 0"
