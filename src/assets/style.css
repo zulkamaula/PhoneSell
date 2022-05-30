@@ -16,7 +16,8 @@
 }
 
 .card-product {
-    height: 420px;
+/*     height: 420px; */
+    height: auto;
     border: 1px solid #D8D8D8;
     border-radius: 8px;
     position: relative;
@@ -121,4 +122,10 @@
 .text-footer {
     color: #FFFFFF;
     font-size: 14px;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
