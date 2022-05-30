@@ -147,38 +147,119 @@
                       </div>
                       <div class="row justify-content-center reviews-section">
                         <div class="col-8 col-md-5 col-lg-8 p-0">
+                          {{ Math.round(product.attributes.rating) }} - 
+                          {{ product.attributes.rating }}
                           <span
                             class="stars"
-                            v-if="product.attributes.rating < 3.5"
+                            v-if="product.attributes.rating == 0"
                           >
-                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
-                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
-                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
                           </span>
+                          <!-- bintang 1 -->
                           <span
                             class="stars"
-                            v-else-if="
-                              product.attributes.rating >= 3.5 &&
-                              product.attributes.rating < 3.9
-                            "
-                          >
+                            v-else-if="product.attributes.rating > 0 && 
+                                        product.attributes.rating < 1.5">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 1.5 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating > 1.5 && 
+                                        product.attributes.rating < 2">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 2 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating >= 2 && 
+                                        product.attributes.rating < 2.5">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 2.5 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating >= 2.5 && 
+                                        product.attributes.rating < 3">
                             <i class="fas fa-star star-enable fa-xs ml-1"></i>
                             <i class="fas fa-star star-enable fa-xs ml-1"></i>
                             <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
                           </span>
+                          <!-- bintang 3 -->
                           <span
                             class="stars"
-                            v-else-if="product.attributes.rating >= 3.9"
+                            v-else-if="product.attributes.rating >= 3 && 
+                                        product.attributes.rating < 3.5">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                            <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 3.5 -->
+                          <span
+                            class="stars"
+                            v-else-if="
+                              product.attributes.rating >= 3.5 &&
+                              product.attributes.rating < 4
+                            "
                           >
                             <i class="fas fa-star star-enable fa-xs ml-1"></i>
                             <i class="fas fa-star star-enable fa-xs ml-1"></i>
                             <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 4 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating >= 4 && 
+                                        product.attributes.rating <= 4.5">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
                             <i class="fas fa-star fa-xs star-disable ml-1"></i>
+                          </span>
+                          <!-- bintang 4.5 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating >= 4.5 && 
+                                        product.attributes.rating < 5">
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star-half fa-xs star-enable ml-1"></i>
+                          </span>
+                          <!-- bintang 5 -->
+                          <span
+                            class="stars"
+                            v-else-if="product.attributes.rating > 4.5 && product.attributes.rating == 5"
+                          >
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
+                            <i class="fas fa-star star-enable fa-xs ml-1"></i>
                           </span>
                           <span class="text-btn">
                             {{ product.attributes.numOfReviews }} reviews
