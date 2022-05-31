@@ -181,7 +181,7 @@
 }
 
 .border-info {
-  border-bottom: 2px solid #74B71B;
+  border-bottom: 2px solid #74B71B !important;
   color: #74B71B;
   font-weight: 600;
   text-align: left;

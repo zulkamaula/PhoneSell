@@ -202,7 +202,7 @@
           <div class="col p-0 text-spec" v-html="detailData.attributes.info"></div>
         </div>
 
-        <div class="row text-center justify-content-center justify-content-lg-center">
+        <div class="row text-center justify-content-center justify-content-lg-start">
           <div class="col-12 p-0 mb-2 text-lg-left" style="color: #838EAB; font-size: 14px;">
             Jumlah
           </div>
@@ -221,7 +221,7 @@
         </div>
 
           <div class="row mt-4">
-            <div class="col-lg-10 col-12">
+            <div class="p-0 col-12">
               <div class="row justify-content-between">
                 <div class="love-section col-3 col-md-3 col-lg-3 align-self-center">
                   <img
