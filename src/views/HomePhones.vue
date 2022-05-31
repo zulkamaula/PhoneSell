@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" v-if="detailPage == false">
         <div class="col-11">
           <div class="row justify-content-around">
             <!-- SET FILTER -->
@@ -142,7 +142,8 @@
                       <div class="row">
                         <div class="col text-poins">
                           <img src="../assets/images/Group 2752.png" />
-                          &nbsp;{{ product.attributes.points }} poins
+                          &nbsp;{{ product.attributes.points.toString()
+                        .replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1\.") }} poins
                         </div>
                       </div>
                       <div class="row justify-content-center reviews-section">
@@ -300,7 +301,7 @@
                         </div>
                         <div class="row justify-content-center mb-5 mt-2">
                           <div class="col-11 p-0">
-                            <img src="../assets/images/Group 3003.png" />
+                            <img src="../assets/images/Group 3003.png" @click="toDetail(product.attributes.id)" style="cursor: pointer;" />
                           </div>
                         </div>
                         <div class="row justify-content-end text-start mt-5">
@@ -324,9 +325,11 @@
               </div>
             </div>
           </div>
-
-          
         </div>
+      </div>
+
+      <div v-else>
+       <DetailPhones :idProduct="idProduct" @back="getListPhones" />
       </div>
     </div>
     <!-- </div> -->
@@ -334,14 +337,20 @@
 </template>
 <script>
 import axios from "axios";
+import DetailPhones from '../components/DetailPhones.vue'
 
 export default {
+  components: {
+    DetailPhones
+  },
   data() {
     return {
       defaultAPI: `https://recruitment.dev.rollingglory.com/api/v2/gifts?page[number]=1&page[size]=9`,
       loading: false,
       phonesData: {},
       selected: [],
+      detailPage: false,
+      idProduct: null
     };
   },
   created() {
@@ -358,6 +367,9 @@ export default {
   },
   methods: {
     getListPhones() {
+      if(this.detailPage == true){
+        this.detailPage = false
+      }
       this.loading = true;
 
       axios
@@ -424,7 +436,7 @@ export default {
 
           // this.phonesData = DATA.filter((items) => {
           //   items.attributes.rating >= 4;
-          // });
+          // });()
 
           console.log("INI res-NYA => ", this.phonesData);
         })
@@ -436,7 +448,7 @@ export default {
     inStock() {
       this.loading = true;
       this.this.phonesData = {};
-
+      
       axios
         .get(this.defaultAPI)
         .then((res) => {
@@ -453,6 +465,11 @@ export default {
           console.log("ini error nya ", err);
         });
     },
+    toDetail(id){
+      this.idProduct = id
+      console.log(id)
+      this.detailPage = true;
+    }
   },
 };
 </script>

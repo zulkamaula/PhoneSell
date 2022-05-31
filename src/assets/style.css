@@ -24,7 +24,7 @@
     opacity: 1;
     backface-visibility: hidden;
     transition: .2s all;
-    cursor: pointer;
+/*     cursor: pointer; */
 }
 
 .middle {
@@ -81,16 +81,40 @@
     font-weight: 600;
 }
 
+.text-success-2 {
+    font-size: 16px;
+    color: #79B625 !important;
+    font-weight: 600;
+}
+
+.text-danger-2 {
+    font-size: 16px;
+    color: #E64580 !important;
+    font-weight: 600;
+}
+
 .text-card {
     font-size: 16px;
     color: #3C3C3F !important;
     font-weight: 600;
 }
 
+.text-card-2 {
+    font-size: 24px;
+    color: #3C3C3F !important;
+    font-weight: 800;
+}
+
 .text-poins {
     font-size: 14px;
     color: #74B71B !important;
     font-weight: lighter;
+}
+
+.text-poins-2 {
+    font-size: 24px;
+    color: #74B71B !important;
+    font-weight: 600;
 }
 
 .star-enable {
@@ -124,8 +148,41 @@
     font-size: 14px;
 }
 
+.text-spec {
+  color: #3C3C3F;
+  font-size: 14px;
+}
+
+.btn-tambah-kurang {
+  background-color: #F2F2F4;
+  color: #3C3C3F;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer
+}
+
 .responsive-image {
   width: 100%;
   max-width: 400px;
   height: auto;
+}
+
+.btn-redeem {
+  background-color: #006A4E;
+  color: #F2F2F4;
+  text-align: center;
+}
+
+.btn-addcart {
+  border: 1px solid #74B71B;
+  color: #74B71B;
+  text-align: center;
+}
+
+.border-info {
+  border-bottom: 2px solid #74B71B;
+  color: #74B71B;
+  font-weight: 600;
+  text-align: left;
 }
