@@ -80,8 +80,7 @@ Head to the overview and you can see the URL of newly published site.
 Netlify automatically generated a name for site.
 After updating by visit the settings tab and clicking "Change site name":
 
-<img src="https://user-images.githubusercontent.com/74296102/170992090-d36884af-c5b5-492e-8d5c-a48fd4c94b84.jpg" alt="drawing" width="300" height="800">
-<img src="https://user-images.githubusercontent.com/74296102/171114598-f99af2f4-c672-49da-9707-88ea1ad40a28.png" alt="drawing" width="900" height="500">
+<img src="https://user-images.githubusercontent.com/74296102/170992090-d36884af-c5b5-492e-8d5c-a48fd4c94b84.jpg" alt="drawing" width="200" height="500"> <img src="https://user-images.githubusercontent.com/74296102/171114598-f99af2f4-c672-49da-9707-88ea1ad40a28.png" alt="drawing" width="500" height="300">
 
 There, that's better. Looks pretty good, huh? 
 if you want to see it, you can visit the site on https://phonesell.netlify.app/
