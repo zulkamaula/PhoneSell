@@ -75,7 +75,9 @@ Head to the overview and you can see the URL of newly published site.
 ![image](https://user-images.githubusercontent.com/74296102/170991638-ebbd1441-992d-4a96-9209-3caefffcbfbf.png)
 Netlify automatically generated a name for site.
 After updating by visit the settings tab and clicking "Change site name":
-![Screenshot_2022-05-30-19-26-06-529_com android chrome](https://user-images.githubusercontent.com/74296102/170992090-d36884af-c5b5-492e-8d5c-a48fd4c94b84.jpg)
+
+<img src="https://user-images.githubusercontent.com/74296102/170992090-d36884af-c5b5-492e-8d5c-a48fd4c94b84.jpg" alt="drawing" width="100" height="100">
+
 There, that's better. Looks pretty good, huh? 
 if you want to see it, you can visit the site on https://phonesell.netlify.app/
 
